@@ -1,4 +1,4 @@
-{% set version = "2.1.3" %}
+{% set version = "3.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tibble_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tibble/tibble_{{ version }}.tar.gz
-  sha256: 9a8cea9e6b5d24a7e9bf5f67ab38c40b2b6489eddb0d0edb8a48a21ba3574e1a
+  sha256: f1e3cfab3845e84dae4e2db74f29b8e355dc47764a171bf4ea91e3a229820469
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -54,8 +54,8 @@ test:
 about:
   home: http://tibble.tidyverse.org/, https://github.com/tidyverse/tibble
   license: MIT
-  summary: Provides a 'tbl_df' class (the 'tibble') that provides stricter checking and better
-    formatting than the traditional data frame.
+  license_file: LICENSE
+  summary: Provides a 'tbl_df' class (the 'tibble') that provides stricter checking and better formatting than the traditional data frame.
   license_family: MIT
 
 extra:
