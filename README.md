@@ -1,7 +1,7 @@
 About r-tibble
 ==============
 
-Home: http://tibble.tidyverse.org/, https://github.com/tidyverse/tibble
+Home: https://tibble.tidyverse.org/, https://github.com/tidyverse/tibble
 
 Package license: MIT
 
