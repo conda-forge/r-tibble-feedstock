@@ -5,7 +5,7 @@ Home: https://tibble.tidyverse.org/, https://github.com/tidyverse/tibble
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Provides a 'tbl_df' class (the 'tibble') that provides stricter checking and better formatting than the traditional data frame.
 
