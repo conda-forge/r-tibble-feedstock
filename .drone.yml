@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-name: linux_aarch64_c_compiler_version7r__h7bb9328e5d
+name: linux_aarch64_r_base3.6
 
 platform:
   os: linux
@@ -8,9 +8,9 @@ platform:
 
 steps:
 - name: Install and build
-  image: condaforge/linux-anvil-aarch64
+  image: quay.io/condaforge/linux-anvil-aarch64
   environment:
-    CONFIG: linux_aarch64_c_compiler_version7r_base3.6target_platformlinux-aarch64
+    CONFIG: linux_aarch64_r_base3.6
     UPLOAD_PACKAGES: True
     PLATFORM: linux-aarch64
     BINSTAR_TOKEN:
@@ -31,7 +31,7 @@ steps:
 
 ---
 kind: pipeline
-name: linux_aarch64_c_compiler_version7r__h6adeef5670
+name: linux_aarch64_r_base4.0
 
 platform:
   os: linux
@@ -39,9 +39,9 @@ platform:
 
 steps:
 - name: Install and build
-  image: condaforge/linux-anvil-aarch64
+  image: quay.io/condaforge/linux-anvil-aarch64
   environment:
-    CONFIG: linux_aarch64_c_compiler_version7r_base4.0target_platformlinux-aarch64
+    CONFIG: linux_aarch64_r_base4.0
     UPLOAD_PACKAGES: True
     PLATFORM: linux-aarch64
     BINSTAR_TOKEN:
