@@ -22,7 +22,14 @@ build:
 requirements:
   build:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-ellipsis >=0.2.0         # [build_platform != target_platform]
+    - r-fansi >=0.4.0            # [build_platform != target_platform]
+    - r-lifecycle >=0.2.0        # [build_platform != target_platform]
+    - r-magrittr                 # [build_platform != target_platform]
+    - r-pillar >=1.5.0           # [build_platform != target_platform]
+    - r-pkgconfig                # [build_platform != target_platform]
     - r-rlang >=0.4.3            # [build_platform != target_platform]
+    - r-vctrs >=0.3.2            # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ posix }}filesystem        # [win]
