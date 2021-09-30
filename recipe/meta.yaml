@@ -1,4 +1,4 @@
-{% set version = "3.1.4" %}
+{% set version = "3.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tibble_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tibble/tibble_{{ version }}.tar.gz
-  sha256: 73870e0771ada3ccae4e79c920f84b4b4dd60702999b5c7a8818c0aba078177f
+  sha256: da6387ba683a67cd7fc2a111f6b62468e480a8078bc1867d433a40c5460edbe7
 
 build:
   merge_build_host: true  # [win]
