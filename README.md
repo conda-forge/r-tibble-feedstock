@@ -6,19 +6,23 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tibble-feedst
 About r-tibble
 --------------
 
-Home: https://tibble.tidyverse.org/, https://github.com/tidyverse/tibble
+Home: https://tibble.tidyverse.org/
 
 Package license: MIT
 
 Summary: Provides a 'tbl_df' class (the 'tibble') that provides stricter checking and better formatting than the traditional data frame.
+
+Development: https://github.com/tidyverse/tibble
 About r-tibble
 --------------
 
-Home: https://tibble.tidyverse.org/, https://github.com/tidyverse/tibble
+Home: https://tibble.tidyverse.org/
 
 Package license: MIT
 
 Summary: Provides a 'tbl_df' class (the 'tibble') that provides stricter checking and better formatting than the traditional data frame.
+
+Development: https://github.com/tidyverse/tibble
 
 Current build status
 ====================
