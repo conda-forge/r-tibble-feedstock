@@ -1,6 +1,5 @@
 {% set version = "3.2.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tibble
@@ -13,8 +12,7 @@ source:
   sha256: 65a72d0c557fd6e7c510d150c935ed6ced5db7d05fc20236b370f11428372131
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
@@ -30,7 +28,9 @@ requirements:
     - r-rlang >=1.0.0            # [build_platform != target_platform]
     - r-vctrs >=0.4.2            # [build_platform != target_platform]
     - {{ compiler('c') }}        # [not win]
+    - {{ stdlib("c") }}          # [not win]
     - {{ compiler('m2w64_c') }}  # [win]
+    - {{ stdlib("m2w64_c") }}    # [win]
     - {{ posix }}filesystem      # [win]
     - {{ posix }}make
     - {{ posix }}sed             # [win]
@@ -47,7 +47,6 @@ requirements:
     - r-vctrs >=0.4.2
   run:
     - r-base
-    - {{ native }}gcc-libs       # [win]
     - r-fansi >=0.4.0
     - r-lifecycle >=1.0.0
     - r-magrittr
