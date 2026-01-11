@@ -1,4 +1,4 @@
-{% set version = "3.3.0" %}
+{% set version = "3.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tibble_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tibble/tibble_{{ version }}.tar.gz
-  sha256: 7f4c439f11b1aca4a45923d8d76f90fbab4e01acf0ba7ad0c38c3a7f22fee192
+  sha256: fb309f8a1939021b237c7e85ff7ad6e8ff5acd57a6230d220a452094b492b28f
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
